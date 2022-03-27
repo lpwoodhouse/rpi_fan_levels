@@ -1,4 +1,13 @@
-# Raspberry Pi Cluster Project
-## Adjust PoE Hat Fan Speed
+# Ansible Role: rpi_fan_adjust
 
-Use this ansible role to adjust the fan speeds on the Raspberry Pi PoE hats.
+## Part of my Raspberry Pi cluster project
+
+Sets the 4 levels of cpu temperatures which in turn increases the 4 levels of speed at which the fans operate.
+
+## Requirements
+
+None
+
+## Role Variables
+
+Available variables are listed below, along with default values (see ```shell defaults/main.yml```)
