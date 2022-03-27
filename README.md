@@ -16,6 +16,7 @@ cpu_temp0: 75
 cpu_temp1: 80
 cpu_temp2: 85
 cpu_temp3: 90
+reboot_var: true
 ```
 ## Dependencies
 
