@@ -21,6 +21,13 @@ cpu_temp3: 90
 
 None
 
+## Example Playbook
+```yaml
+    - hosts: all
+      roles:
+        - rpi_fan_adjust
+```
+
 ## License
 
 GNU General Public Licence v3.0
