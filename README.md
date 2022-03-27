@@ -25,6 +25,12 @@ None
 ## Example Playbook
 ```yaml
     - hosts: all
+      vars:
+        cpu_temp0: 60
+        cpu_temp1: 65
+        cpu_temp2: 70
+        cpu_temp3: 75
+        reboot_var: false
       roles:
         - rpi_fan_adjust
 ```
