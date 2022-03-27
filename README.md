@@ -2,7 +2,7 @@
 
 ### Part of my Raspberry Pi cluster project
 
-Sets the 4 levels of cpu temperatures which in turn increases the 4 levels of speed at which the fans operate.
+Sets the 4 levels of cpu temperature at which an increase in fan speed occurs.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ None
 
 ## License
 
-GNU
+GNU General Public Licence v3.0
 
 ## Author Information
 
