@@ -32,7 +32,7 @@ None
         cpu_temp3: 75
         reboot_var: false
       roles:
-        - rpi_fan_adjust
+        - rpi_fan_levels
 ```
 
 ## License
