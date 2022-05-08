@@ -1,0 +1,9 @@
+---
+# default variables for rpi_fan_adjust role
+cpu_temp0: 75
+cpu_temp1: 80
+cpu_temp2: 85
+cpu_temp3: 90
+
+# rpi's will require reboot for changes to take effect. False prevents role from rebooting rpi's
+reboot_var: true
