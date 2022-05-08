@@ -1,4 +1,4 @@
-# Ansible Role: rpi_fan_adjust
+# Ansible Role: rpi_fan_levels
 
 ### Part of my Raspberry Pi cluster project
 
