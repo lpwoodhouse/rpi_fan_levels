@@ -12,10 +12,10 @@ None
 
 Available variables are listed below, along with default values (see ```defaults/main.yml```)
 ```shell
-cpu_temp0: 75
-cpu_temp1: 80
-cpu_temp2: 85
-cpu_temp3: 90
+fan_level0: 75000
+fan_level1: 80000
+fan_level2: 85000
+fan_level3: 90000
 reboot_var: true
 ```
 ## Dependencies
@@ -26,10 +26,10 @@ None
 ```yaml
     - hosts: all
       vars:
-        cpu_temp0: 60
-        cpu_temp1: 65
-        cpu_temp2: 70
-        cpu_temp3: 75
+        fan_level0: 60000
+        fan_level1: 65000
+        fan_level2: 70000
+        fan_level3: 75000
         reboot_var: false
       roles:
         - rpi_fan_levels
