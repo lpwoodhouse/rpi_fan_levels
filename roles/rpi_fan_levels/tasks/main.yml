@@ -1,5 +1,5 @@
 ---
-# main tasks for rpi_fan_adjust role
+# main tasks for rpi_fan_levels role
 - name: add poe hat fan speeds to /boot/config.txt
   blockinfile:
     path: /boot/config.txt
@@ -10,19 +10,18 @@
       dtparam=poe_fan_temp3={{ cpu_temp3 }}
     marker: "# {mark} ANSIBLE MANAGED BLOCK FOR POE HAT FAN SPEEDS"
   ignore_errors: true
+  
 - name: reboot cluster
   reboot:
     msg: reboot initiated to apply changes
-    connect_timeout: 5
-    reboot_timeout: 300
-    pre_reboot_delay: 0
-    post_reboot_delay: 30
     test_command: uptime
-  when: reboot_var
+  when: reboot_var|bool
+  
 - name: action complete
   debug:
-    msg: "PoE Fan Adjustments Complete"
+    msg: "PoE fan adjustments complete"
+    
 - name: reboot required
   debug: 
-    msg: "Reboot required for changes to take effect."
-  when: not reboot_var
+    msg: "reboot required for changes to take effect."
+  when: not reboot_var|bool
